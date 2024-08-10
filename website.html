@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <title>DECOR-CRAFT</title>
+    <style>
+        .title-text {
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .title-text:hover {
+            transform: scale(1.1);
+            color: #000000;
+            /* Tailwind's blue-700 */
+        }
+
+        .subtitle-text {
+            transition: color 0.3s ease;
+        }
+
+        .subtitle-text:hover {
+            color: #000000;
+            /* Tailwind's green-600 */
+        }
+
+        .image-hover:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        .btn-impressive {
+            background-image: linear-gradient(to right, #feb47b, #d97408);
+            /* Gradient background */
+        }
+
+        .btn-impressive:hover {
+            background-image: linear-gradient(to right, #d97408, #feb47b);
+            /* Gradient reverse on hover */
+            transform: scale(1.1);
+            /* Enlarge on hover */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            /* Larger shadow on hover */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            /* Text shadow on hover */
+        }
+
+        .img-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .img-hover-effect:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+
+<body class="bg-yellow-100 h-[400vh] scrollbar-corner-orange-950 ">
+    <nav class="w-full h-24 bg-yellow-800 flex justify-between items-center px-6">
+        <div class="text-2xl font-bold text-white font-sans flex items-center gap-7">
+            <img class="w-20 h-20 rounded-full img-hover-effect"
+                src="https://i.pinimg.com/564x/39/ee/31/39ee316b4333d4e005be824a9f46d89f.jpg" alt="">
+            <a href="#"> DECOR-CRAFT</a>
+        </div>
+
+        <div class="md:flex font-bold text-white text-lg items-center space-x-8 hidden">
+            <a href="#" class="nav-item cursor-pointer px-3 py-2">HOME</a>
+            <a href="#" class="nav-item cursor-pointer px-3 py-2">CONTACT US</a>
+            <a href="#" class="nav-item cursor-pointer px-3 py-2">YOUR ORDER</a>
+            <a href="#" class="nav-item cursor-pointer px-3 py-2">OUR WORK</a>
+            <a href="#" class="nav-item cursor-pointer px-3 py-2">ABOUT</a>
+        </div>
+
+        <div
+            class=" btn-impressive transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl hidden md:block px-4 py-2 text-white rounded-3xl font-medium cursor-pointer w-32 text-center btn-login">
+            Login/Signup
+        </div>
+        <div class="md:hidden text-white hover:text-yellow-200">
+            <button class=" text-4xl">&#8801;</button>
+        </div>
+    </nav>
+
+    <main class="max-w-[1920px] mx-auto overflow-hidden">
+        <div class="relative shadow-black">
+            <img class="h-[440px] md:h-[840px] w-full object-cover bg-center md:bg-cover bg-no-repeat bg-fixed rounded-bl-[198px] md:rounded-bl-[298px] relative z-20 shadow-black shadow-lg"
+                src="https://c1.wallpaperflare.com/preview/1019/952/893/dining-dining-room-view-windows.jpg" alt="">
+            <div class="absolute inset-0 flex items-center justify-center w-full h-full">
+                <div
+                    class="hidden md:flex flex-col items-start justify-center text-amber-800 z-30 bg-white bg-opacity-0 p-4 rounded-lg">
+                    <h1 class="text-6xl xl:text-9xl font-bold mt-20 ml-10 xl:ml-28 font-serif title-text">DECOR-CRAFT
+                    </h1>
+                    <p class="text-2xl xl:text-5xl font-bold mt-8 xl:mt-16 ml-10 xl:ml-28 font-serif title-text">"where
+                        style meets comfort"</p>
+                    <button
+                        class="btn-impressive text-black font-bold py-3 px-10 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl mt-10 ml-32 ">
+                        Explore To
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden flex flex-col mt-14 gap-6 px-4">
+            <h1 class="text-6xl font-bold text-center font-serif title-text md:text-5xl ">DECOR-CRAFT</h1>
+            <p class="text-lg font-bold text-center font-serif subtitle-text mt-20">Welcome to Decor-Craft, where style meets
+                comfort. We are your premier destination for high-quality, stylish, and affordable furniture. Whether
+                you're furnishing a new home, upgrading your office, or just looking to add a touch of elegance to your
+                living space, we've got you covered.</p>
+        </div>
+
+        <div class="hidden md:grid grid-flow-row mt-28 gap-16 px-4">
+            <h2 class="text-4xl xl:text-8xl font-bold text-center font-serif">
+                <p>HELLO</p> LADIES AND GENTLEMEN
+            </h2>
+            <h3 class="text-3xl xl:text-6xl font-bold text-center font-serif">I'm your carpenter</h3>
+            <p class="text-2xl xl:text-4xl font-bold text-center font-serif mr-24 ml-24">We are your premier destination
+                for high-quality, stylish, and affordable furniture. Whether you're furnishing a new home, upgrading
+                your office, or just looking to add a touch of elegance to your living space, we've got you covered.</p>
+        </div>
+
+
+        <section class="mt-20 xl:mt-40 relative z-20 mx-4 xl:mx-28">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <img class="mx-auto rounded-full img-hover-effect w-48 h-48"
+                                src="https://i.pinimg.com/474x/3e/5f/2b/3e5f2b5e5dc5c2fb3a2fbc7e30b0fbe3.jpg"
+                                alt="Project Planning">
+                        </div>
+                        <h3 class="font-bold font-serif mb-5 text-3xl mt-7">Project Planning</h3>
+                        <p class="mb-5 max-w-md mx-auto font-serif font-medium">Planning is the cornerstone of every
+                            successful project. At Decor-Craft, our meticulous project planning ensures that each step,
+                            from concept to completion, is executed with precision and care.Our team of experienced
+                            professionals collaborates closely with you to understand your vision, set realistic goals,
+                            and create a comprehensive roadmap. This ensures timely delivery and impeccable quality,
+                            turning your dream spaces into reality with efficiency and style. </p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <img class="mx-auto rounded-full img-hover-effect w-48 h-48"
+                                src="https://i.pinimg.com/474x/5d/66/f8/5d66f8a37549f81c9be419ba6986834d.jpg"
+                                alt="Project Planning">
+                        </div>
+                        <h3 class="font-bold font-serif mb-5 text-3xl mt-7">Gaining Materials</h3>
+                        <p class="mb-5 max-w-md mx-auto font-serif font-medium">Sourcing the finest materials is the
+                            foundation of every great piece of furniture. At Decor-Craft, we prioritize quality and
+                            sustainability in our material selection process. Our dedicated team meticulously selects
+                            top-grade wood, fabrics, and metals from trusted suppliers around the world. This careful
+                            selection ensures that every item we craft not only looks stunning but also stands the test
+                            of time. We are committed to using eco-friendly and ethically sourced materials, ensuring
+                            that your furniture is as sustainable as it is stylish. </p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <img class="mx-auto rounded-full  img-hover-effect w-48 h-48"
+                                src="https://i.pinimg.com/474x/5d/75/af/5d75af7ec62bb25bc4148da4e609d396.jpg"
+                                alt="Project Planning">
+                        </div>
+                        <h3 class="font-bold font-serif mb-5 text-3xl mt-7">Project Execution</h3>
+                        <p class="mb-5 max-w-md mx-auto font-serif font-medium">Project execution is where vision meets
+                            reality. At Decor-Craft, our skilled craftsmen and project managers work diligently to bring
+                            your plans to life. With a keen eye for detail and a commitment to excellence, we ensure
+                            that every aspect of the project is executed flawlessly. From selecting the finest materials
+                            to coordinating with suppliers and managing timelines, our team guarantees a seamless and
+                            stress-free execution process, delivering results that exceed your expectations. </p>
+
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+            </div>
+
+        </section>
+
+        <section class="mt-20 xl:mt-40 relative z-20 mx-4 xl:mx-28">
+            <div class="container mx-auto xl:px-0">
+                <div
+                    class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]">
+
+                    <div
+                        class=" flex-1 order-2 xl:order-none font-bold font-serif md:text-7xl text-5xl mr-10 ml-10 max-w-xl xl:max-w-[410px] title-text">
+                        At
+                        Decor-Craft, we believe that every piece of furniture tells a story</div>
+                    <div class=" max-w-[453px] order-1 xl:order-none mx-auto xl:max-w-none xl:mx-0 ">
+                        <img class="rounded-bl-[240px] rounded-tr-[240px] shadow-black shadow-md"
+                            src="https://i.pinimg.com/736x/2e/ae/68/2eae68aca7be004f8d13ded2e135b25e.jpg" alt="">
+                    </div>
+                </div>
+                <p class="mt-24 font-serif font-semibold md:text-4xl text-2xl mr-20 ml-20 text-center">Founded with a
+                    passion for
+                    design and craftsmanship, our mission is to transform your spaces into havens of style and comfort.
+                    With years of experience and a commitment to excellence, we meticulously design and craft each piece
+                    of furniture to reflect both functionality and beauty.</p>
+                <h1 class="font-serif font-semibold text-6xl text-center mt-24 ml-10">Our Values:</h1>
+                <p class="mt-24 font-serif font-semibold md:text-4xl text-2xl mr-20 ml-20 text-center">Quality: We take
+                    pride in our meticulous craftsmanship and attention to detail.
+                    Customer Satisfaction: Your satisfaction is our top priority. We’re dedicated to ensuring that every
+                    experience with Decor-Craft exceeds your expectations.
+                    Sustainability: We are committed to sustainable practices and environmentally friendly materials, so
+                    you can feel good about your purchases.</p>
+                <h1 class="font-serif font-semibold text-6xl text-center mt-24 ml-10">Our Promise:</h1>
+                <p class="mt-24 font-serif font-semibold md:text-4xl text-2xl mr-20 ml-20 text-center">We promise to
+                    deliver not just furniture, but pieces that inspire and uplift. Whether you’re
+                    decorating a cozy home, a modern office, or a luxurious space, Decor-Craft is here to help you
+                    create an environment that truly feels like your own.</p>
+                <div class="flex flex-1 place-content-center  font-serif text-xl font-semibold space-x-4 mt-16">
+                    <img class="rounded-full w-16 h-16 items-center"
+                        src="https://i.pinimg.com/564x/a5/e4/dc/a5e4dcc304aeb267eab68c26c34ac7e9.jpg" alt="Contact Us">
+                    <span class="text-center py-5">Contact Us</span>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="relative mt-[80px] xl:mt-[150px] z-20 md:mx-40">
+            <div class="container mx-auto xl:px-0">
+                <div class="mt-8 xl:mt-0 xl:ml-8 ">
+                    <h3 class="text-5xl md:text-7xl font-bold text-center font-serif mb-20 title-text">OUR WORK
+                        EXPERIENCE</h3>
+                    <p class="mt-4 text-center text-lg md:text-xl font-semibold font-serif subtitle-text mr-20 ml-20">
+                        With over a decade of experience in the furniture industry, we at Decor-Craft pride ourselves on
+                        delivering exceptional craftsmanship and innovative designs. Our team of skilled artisans and
+                        designers work meticulously to bring your vision to life, ensuring every piece meets the highest
+                        standards of quality and aesthetics.
+                    </p>
+                    <p class="mt-4 text-center text-lg font-semibold font-serif subtitle-text mr-20 ml-20">
+                        From modern kitchen setups to classic living room decor, our portfolio showcases a diverse range
+                        of projects that reflect our commitment to excellence. We believe in creating spaces that are
+                        not only beautiful but also functional and comfortable, tailored to your unique style and needs.
+                    </p>
+
+                </div>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[140px] mt-32 items-center ml-20 mr-20 md:mr-0 md:ml-0 justify-between">
+
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center ">
+                        <img class="rounded-tr-[140px] img-hover-effect mb-6"
+                            src="https://i.pinimg.com/474x/32/86/36/32863695c6271493fdb6fdf8727b01e3.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif">MODERN KITCHEN</h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center">
+                        <img class="rounded-tr-[140px] img-hover-effect"
+                            src="https://i.pinimg.com/474x/0e/26/c8/0e26c8e1ca7dfc30389e5f0d051cfcc0.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif">BEDROOM</h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center">
+                        <img class="rounded-tr-[140px] img-hover-effect "
+                            src="https://i.pinimg.com/474x/9b/ee/ec/9beeec659a93e45c23f7b9dcadabbe3c.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif">WASHROOM</h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center">
+                        <img class="rounded-tr-[140px] img-hover-effect "
+                            src="https://i.pinimg.com/474x/6c/b1/c3/6cb1c364e5ff034215c0e28ae591c411.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif"> LIVING ROOM</h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center">
+                        <img class="rounded-tr-[140px] img-hover-effect "
+                            src="https://i.pinimg.com/474x/34/04/ac/3404acdbc0aa28af5703727360055048.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif">GUEST ROOM</h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center">
+                        <img class="rounded-tr-[140px] img-hover-effect "
+                            src="https://i.pinimg.com/474x/e6/f7/72/e6f77263d169e308fad30c84dcdb01dd.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif">STUDY ROOM</h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center">
+                        <img class="rounded-tr-[140px] img-hover-effect "
+                            src="https://i.pinimg.com/474x/08/e7/30/08e73007e7c29795c5ccc16e7b9ac643.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif">TERRACE </h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center">
+                        <img class="rounded-tr-[140px] img-hover-effect "
+                            src="https://i.pinimg.com/474x/0c/45/f9/0c45f98c3267b4a9510ecb270eb88f59.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif">BALCONY </h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="w-full h-full mx-auto max-w-[648px] items-center">
+                        <img class="rounded-tr-[140px] img-hover-effect "
+                            src="https://i.pinimg.com/474x/72/0b/73/720b738a52d15201e25613d7ae1a329d.jpg" alt="">
+                        <h3 class="mt-8 text-3xl font-bold text-left font-serif">KID'S ROOM</h3>
+                        <p class="mt-4 text-left text-lg font-medium">Decor/architecture</p>
+                        <button
+                            class="mt-8 bg-yellow-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-yellow-900 relative mt-[80px] xl:mt-[150px] z-20 py-[80px] xl:px-[150px]">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 xl:grid-cols-4 gap-12">
+                    <div class="text-center text-yellow-100">
+                        <h3 class="text-7xl font-serif font-bold ">12</h3>
+                        <p class="text-2xl font-serif font-medium">year of experience</p>
+                    </div>
+                    <div class="text-center  text-yellow-100">
+                        <h3 class="text-7xl font-serif font-bold ">100</h3>
+                        <p class="text-2xl font-serif font-medium">completed projects</p>
+                    </div>
+
+                    <div class="text-center  text-yellow-100">
+                        <h3 class="text-7xl font-serif font-bold ">69</h3>
+                        <p class="text-2xl font-serif font-medium">active projects</p>
+                    </div>
+                    <div class="text-center text-yellow-100">
+                        <h3 class="text-7xl font-serif font-bold ">110</h3>
+                        <p class="text-2xl font-serif font-medium">Customer happy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-5
+        xl md:text-9xl font-bold font-serif text-center mt-36 title-text "> ARTICLES & NEWS</div>
+        <p class="text-xl text-center mr-10 ml-10 mt-16 font-bold font-serif"> Get expert advice on how to decorate your
+            home, optimize your space, and choose the perfect furniture pieces. Our articles provide practical tips to
+            help you create a comfortable and stylish home.</p>
+
+        <section class="mt-[180px] xl:mt-[150px] relative z-20 md:ml-20">
+            <div class="container mx-auto px-4 xl:px-0">
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+
+                    <div
+                        class="w-full max-w-[382px] h-[580px] border border-black rounded-[62px] p-[20px] hover:bg-yellow-200 transition-all group cursor-pointer mx-auto xl:mx-0 shadow-black shadow-md">
+                        <img src="https://i.pinimg.com/474x/d8/0e/3c/d80e3cbbd11095103a2eb8ae88eeb1bb.jpg" alt=""
+                            class="mb-5 rounded-t-[40px] h-[340px] w-full object-cover">
+                        <div class="flex flex-col">
+                            <h3 class="mt-2 font-serif font-bold text-2xl">Let's get solution for building construction
+                                work</h3>
+                            <div class="flex items-center justify-between mt-2">
+                                <p class="font-serif font-medium text-xl">22 July 2024</p>
+                                <button
+                                    class="bg-white w-[52px] h-[52px] rounded-full group-hover:bg-yellow-200 transition-all flex items-center justify-center mt-3">
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full max-w-[382px] h-[580px] border border-black rounded-[62px] p-[20px] hover:bg-yellow-200 transition-all group cursor-pointer mx-auto xl:mx-0 shadow-black shadow-md">
+                        <img src="https://i.pinimg.com/474x/a3/22/d8/a322d8a14b9e31398589cc2828785164.jpg" alt=""
+                            class="mb-5 rounded-t-[40px] h-[340px] w-full object-cover">
+                        <div class="flex flex-col">
+                            <h3 class="mt-2 font-serif font-bold text-2xl">Let's get solution for building construction
+                                work</h3>
+                            <div class="flex items-center justify-between mt-2">
+                                <p class="font-serif font-medium text-xl">15 august 2023</p>
+                                <button
+                                    class="bg-white w-[52px] h-[52px] rounded-full group-hover:bg-yellow-200 transition-all flex items-center justify-center mt-3">
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full max-w-[382px] h-[580px] border border-black rounded-[62px] p-[20px] hover:bg-yellow-200 transition-all group cursor-pointer mx-auto xl:mx-0 shadow-black shadow-md">
+                        <img src="https://i.pinimg.com/564x/2d/41/84/2d4184645a4d12e3889ff838bb4dca1b.jpg" alt=""
+                            class="mb-5 rounded-t-[40px] h-[340px] w-full object-cover">
+                        <div class="flex flex-col">
+                            <h3 class="mt-2 font-serif font-bold text-2xl">Low cost latest invented interior designing
+                                ideas</h3>
+                            <div class="flex items-center justify-between mt-2">
+                                <p class="font-serif font-medium text-xl">24 June 2023</p>
+                                <button
+                                    class="bg-white w-[52px] h-[52px] rounded-full group-hover:bg-yellow-300 transition-all flex items-center justify-center mt-3">
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-[180px] xl:">
+
+        </section>
+
+        <footer class="mt-[80px] xl:mt-[150px] relative z-20 bg-yellow-950 py-12">
+            <div class="container mx-auto px-6 xl:px-0">
+                <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+                    <div class="w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left">
+                        <a href="https://i.pinimg.com/564x/39/ee/31/39ee316b4333d4e005be824a9f46d89f.jpg" class="flex justify-center xl:justify-start mb-8">
+                            <h1 class="text-2xl font-bold text-white">DECOR-CRAFT</h1>
+                        </a>
+                        <p class="mb-8 text-xl text-yellow-100">It is a long established fact that a reader will be distracted looking.</p>
+                        <ul class="flex flex-col md:flex-row items-center gap-5">
+                            <li><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white hover:text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg></a></li>
+                            <li><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white hover:text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/></svg></a></li>
+                            <li><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white hover:text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.037 21.998a10.313 10.313 0 0 1-7.168-3.049 9.888 9.888 0 0 1-2.868-7.118 9.947 9.947 0 0 1 3.064-6.949A10.37 10.37 0 0 1 12.212 2h.176a9.935 9.935 0 0 1 6.614 2.564L16.457 6.88a6.187 6.187 0 0 0-4.131-1.566 6.9 6.9 0 0 0-4.794 1.913 6.618 6.618 0 0 0-2.045 4.657 6.608 6.608 0 0 0 1.882 4.723 6.891 6.891 0 0 0 4.725 2.07h.143c1.41.072 2.8-.354 3.917-1.2a5.77 5.77 0 0 0 2.172-3.41l.043-.117H12.22v-3.41h9.678c.075.617.109 1.238.1 1.859-.099 5.741-4.017 9.6-9.746 9.6l-.215-.002Z" clip-rule="evenodd"/></svg></a></li>
+                            <li><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white hover:text-yellow-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/><path d="M7.2 8.809H4V19.5h3.2V8.809Z"/></svg></a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-1 flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end">
+                        <div>
+                            <h3 class="mb-5 font-bold mt-5 text-yellow-100">PAGES</h3>
+                            <ul class="flex flex-col gap-1 text-yellow-100 font-medium mb-5">
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Our work</a></li>
+                                <li><a href="">Article & News</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="mb-5 text-yellow-100 font-bold mt-5">SERVICES</h3>
+                            <ul class="flex text-yellow-100 flex-col gap-1 font-medium mb-5">
+                                <li><a href="">Modern Kitchen</a></li>
+                                <li><a href="">Bedroom</a></li>
+                                <li><a href="">Washroom</a></li>
+                                <li><a href="">Living Room</a></li>
+                                <li><a href="">Guest Room</a></li>
+                                <li><a href="">Study Room</a></li>
+                                <li><a href="">Terrace</a></li>
+                                <li><a href="">Balcony</a></li>
+                                <li><a href="">Kid's Room</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="mb-5 font-bold mt-5 text-yellow-100">LOCATION</h3>
+                            <p class="font-medium text-yellow-100">Khan Market, 61A, Rabindra Nagar, New Delhi 110003, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+    </main>
+
+</html>
+</body>
